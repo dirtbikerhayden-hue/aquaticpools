@@ -38,7 +38,7 @@ export default function BlogPage() {
               Tips, Guides &amp; Insights
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Expert advice from the Timberline Falls team to help you plan your outdoor living project, from pool construction cost guides to concrete comparisons and seasonal scheduling tips.
+              Expert advice from the Aquatic Pools and Spas team to help you plan your outdoor living project, from pool construction cost guides to finish comparisons and seasonal scheduling tips.
             </p>
           </div>
         </div>

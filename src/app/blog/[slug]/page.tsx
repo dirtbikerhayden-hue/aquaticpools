@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
               Ready to Get Started?
             </h3>
             <p className="text-slate-600 mb-6">
-              Contact Timberline Falls for a free, no-obligation estimate on your project.
+              Contact Aquatic Pools and Spas for a free, no-obligation estimate on your project.
             </p>
             <Button href="/contact" size="lg">
               Get Your Free Estimate

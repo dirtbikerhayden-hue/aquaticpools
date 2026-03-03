@@ -73,7 +73,7 @@ export default function ProcessPage() {
                 Step 4: Permits and Pre-Construction
               </h2>
               <p className="text-slate-600 leading-relaxed text-base lg:text-lg">
-                Before construction begins, Timberline Falls handles all necessary permits and approvals. This includes city building permits, HOA architectural review submissions, utility locates, and any engineering reviews required for your project. We prepare all drawings and documentation, submit applications, respond to reviewer comments, and schedule inspections. For pool projects, this process typically takes two to four weeks depending on the municipality. During this time, we also finalize material orders, coordinate equipment delivery, and schedule our construction crews so work begins promptly once permits are approved. We keep you informed throughout the permitting process so you always know the status and expected timeline.
+                Before construction begins, Aquatic Pools and Spas handles all necessary permits and approvals. This includes city building permits, HOA architectural review submissions, utility locates, and any engineering reviews required for your project. We prepare all drawings and documentation, submit applications, respond to reviewer comments, and schedule inspections. For pool projects, this process typically takes two to four weeks depending on the municipality. During this time, we also finalize material orders, coordinate equipment delivery, and schedule our construction crews so work begins promptly once permits are approved. We keep you informed throughout the permitting process so you always know the status and expected timeline.
               </p>
             </div>
             <div>

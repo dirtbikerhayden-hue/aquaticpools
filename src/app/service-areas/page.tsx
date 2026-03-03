@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, ArrowRight, Phone } from 'lucide-react';
 import { serviceAreas } from '@/data/service-areas';
@@ -35,16 +34,6 @@ export default function ServiceAreasPage() {
 
       {/* Hero */}
       <section className="relative py-16 lg:py-24 bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 overflow-hidden">
-        <Image
-          src="https://assets.cdn.filesafe.space/VpxNeZuIvxjzZljfxNjd/media/69a0b2ed9a0c18b2f11513c3.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          quality={70}
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-slate-950/75" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ label: 'Service Areas', href: '/service-areas' }]} variant="dark" />
           <div className="max-w-3xl mt-4">
