@@ -191,7 +191,7 @@ export function TestimonialCards() {
   };
 
   useEffect(() => {
-    const timer = setInterval(() => setPage((p) => (p + 1) % TOTAL_PAGES), 12000);
+    const timer = setInterval(() => setPage((p) => (p + 1) % TOTAL_PAGES), 35000);
     return () => clearInterval(timer);
   }, [timerKey]);
 

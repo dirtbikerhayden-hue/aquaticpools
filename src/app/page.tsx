@@ -108,10 +108,10 @@ export default function HomePage() {
             {serviceCategories.map((cat, i) => {
               const Icon = cat.icon;
               return (
-                <FadeIn key={cat.href} delay={i * 120} direction="up">
+                <FadeIn key={cat.href} delay={i * 200} direction="up" className="h-full">
                 <Link
                   href={cat.href}
-                  className="group relative bg-white rounded-2xl border border-slate-100 p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
+                  className="group relative flex flex-col bg-white rounded-2xl border border-slate-100 p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1.5 overflow-hidden h-full"
                 >
                   {/* Top gradient accent */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-500 via-brand-600 to-brand-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

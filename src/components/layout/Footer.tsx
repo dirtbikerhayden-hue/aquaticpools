@@ -25,10 +25,10 @@ export function Footer() {
 
       {/* Main footer */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-12 items-start">
 
           {/* Brand column */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a5e65c9c149958e1420465.png"
