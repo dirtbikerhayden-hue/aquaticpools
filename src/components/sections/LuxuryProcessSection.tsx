@@ -93,7 +93,7 @@ export function LuxuryProcessSection() {
               src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png"
               alt="Luxury pool architectural design"
               fill
-              className="object-contain"
+              className="object-cover object-center"
               sizes="40vw"
             />
           </div>
