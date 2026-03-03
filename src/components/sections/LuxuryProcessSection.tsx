@@ -47,7 +47,7 @@ const steps = [
 
 export function LuxuryProcessSection() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-28">
+    <section className="relative overflow-hidden py-24 lg:py-32">
       {/* Full-bleed background image */}
       <div
         className="absolute inset-0"
@@ -58,45 +58,45 @@ export function LuxuryProcessSection() {
           backgroundPosition: 'center',
         }}
       />
-      {/* Dark overlay — light enough to keep the image prominent */}
-      <div className="absolute inset-0 bg-black/55" />
+      {/* Very light vignette — edges darken, centre stays clear so image shows */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/20 to-black/55" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-16">
           <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
             <span className="w-6 h-px bg-accent-gold" />
             <span className="gradient-text-gold">How It Works</span>
             <span className="w-6 h-px bg-accent-gold" />
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white uppercase tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white uppercase tracking-tight drop-shadow-lg">
             Luxury Pool Construction Process
           </h2>
         </div>
 
-        {/* Steps — 2-column grid so the image breathes on all sides */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/10">
+        {/* Steps — left-border style, transparent so image shows through */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
           {steps.map((step) => (
-            <div
-              key={step.number}
-              className="bg-black/30 backdrop-blur-sm p-6 flex flex-col gap-3 hover:bg-black/20 transition-colors duration-200"
-            >
-              <span className="text-accent-gold font-bold text-2xl font-display">{step.number}</span>
-              <h3 className="text-white font-display font-bold text-base uppercase tracking-wide leading-snug">
+            <div key={step.number} className="pl-4 border-l-2 border-accent-gold/60">
+              <span className="block text-accent-gold font-display font-bold text-2xl mb-2 drop-shadow">{step.number}</span>
+              <h3 className="text-white font-display font-bold text-sm uppercase tracking-wide leading-snug mb-2 drop-shadow">
                 {step.title}
               </h3>
-              <p className="text-white/70 text-sm leading-relaxed">{step.description}</p>
+              <p className="text-white/80 text-xs leading-relaxed [text-shadow:0_1px_4px_rgba(0,0,0,0.7)]">{step.description}</p>
             </div>
           ))}
 
-          {/* CTA tile — fills the last grid cell */}
-          <div className="bg-accent-gold/90 backdrop-blur-sm p-6 flex flex-col justify-between gap-4 hover:bg-accent-gold transition-colors duration-200">
-            <p className="text-white font-display font-bold text-base uppercase tracking-wide leading-snug">
-              Ready to Start?
-            </p>
+          {/* CTA cell */}
+          <div className="pl-4 border-l-2 border-accent-gold flex flex-col justify-between gap-5">
+            <div>
+              <span className="block text-accent-gold font-display font-bold text-2xl mb-2 drop-shadow">→</span>
+              <p className="text-white font-display font-bold text-sm uppercase tracking-wide drop-shadow">
+                Ready to Start?
+              </p>
+            </div>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white text-accent-gold font-semibold text-sm tracking-wide hover:bg-white/90 transition-colors self-start"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-accent-gold text-white font-semibold text-sm tracking-wide hover:bg-accent-gold/90 transition-colors self-start shadow-lg"
             >
               Get a Free Estimate
             </Link>

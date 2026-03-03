@@ -25,7 +25,7 @@ export function Footer() {
 
       {/* Main footer */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-12">
 
           {/* Brand column */}
           <div className="lg:col-span-1">
@@ -158,8 +158,8 @@ export function Footer() {
             © {currentYear} {siteConfig.name}. All rights reserved. ROC #358080.
           </p>
           <div className="flex items-center gap-4 text-xs text-slate-500">
-            <Link href="/sitemap.xml" className="hover:text-slate-400 transition-colors">
-              Sitemap
+            <Link href="/privacy-policy" className="hover:text-slate-400 transition-colors">
+              Privacy Policy
             </Link>
           </div>
         </div>

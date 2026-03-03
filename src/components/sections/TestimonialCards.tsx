@@ -6,59 +6,59 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
   {
     id: '1',
-    author: 'Sarah M.',
-    location: 'Scottsdale, AZ',
+    author: 'Erica White',
+    location: 'Phoenix, AZ',
     quote:
-      'From our very first meeting I knew these guys were different. They actually listened to what we wanted instead of just pushing whatever was easiest for them. The zero-edge pool they built us is stunning, and the spa integrates perfectly with the whole design. Our neighbors constantly ask who did it.',
+      'Aquatic Pools exceeded all our expectations! From start to finish, their team demonstrated professionalism, creativity, and attention to detail. Even after the project was completed, their customer service remained top-notch. We couldn\'t be happier with the result, our new pool is absolutely stunning! Highly recommend Aquatic Pools for anyone looking for quality and excellence.',
   },
   {
     id: '2',
-    author: 'David R.',
-    location: 'Paradise Valley, AZ',
+    author: 'Rich G.',
+    location: 'Scottsdale, AZ',
     quote:
-      'We talked to four companies before going with Aquatic Pools. The 3D design presentation is what sold us. We saw exactly what our backyard would look like before a single shovel hit the ground, and the finished pool matched it perfectly. Worth every dollar.',
+      'They met every deadline and kept us informed of all progress. We are delighted with the outcome and will definitely recommend their services to our network of family, friends, and neighbors. Additionally, we were pleasantly surprised and grateful for the thoughtful pool gifts presented to us upon project completion. Thank you for your outstanding work.',
   },
   {
     id: '3',
-    author: 'Jennifer C.',
-    location: 'Chandler, AZ',
+    author: 'Victoria',
+    location: 'Scottsdale, AZ',
     quote:
-      'Oh my goodness where do I even start. Arthur was incredible throughout the whole process. We went from having a plain flat backyard to this gorgeous resort-style setup with a pool, spa, travertine deck, and water features. Our kids literally will not come inside anymore lol. So worth it!',
+      'I definitely recommend this pool company to friends and family they did a fantastic job, if I could give them more than five star they certainly deserve it. The Aquatic team were professional, dependable and all work was completely on time. I love spending time in my back yard. Thank you Aquatic Pools!',
   },
   {
     id: '4',
-    author: 'Michael T.',
-    location: 'Gilbert, AZ',
+    author: 'Jacob Flores',
+    location: 'Chandler, AZ',
     quote:
-      'We had a hard deadline because of a family reunion we were hosting. I was upfront about that from day one and Aquatic Pools delivered on time, no excuses. The project manager kept us updated constantly. Outdoor kitchen came out great too. These guys run a tight ship.',
+      'So happy with the way our pool turned out and service that Aquatic Pools provided. They were communicative throughout the whole process and transferred our backyard into exactly how we imagined. I would recommend them to anyone who is considering building a pool!',
   },
   {
     id: '5',
-    author: 'Amanda F.',
+    author: 'Naim Rasheed',
     location: 'Phoenix, AZ',
     quote:
-      'Had an old pool that was just embarrassing at this point. New Pebble Tec finish, fresh tile, updated coping, LED lighting throughout, and a water feature we never thought we could afford. It genuinely looks like a brand new pool. The remodel process was way smoother than I expected.',
+      'We got our pool remodeled from this company and we had a wonderful experience. Arthur was very informative and suggested ways we could save money. Our family was very impressed with the communication and fair pricing.',
   },
   {
     id: '6',
-    author: 'Robert K.',
-    location: 'Scottsdale, AZ',
+    author: 'John Smith',
+    location: 'Gilbert, AZ',
     quote:
-      'I have been in commercial construction for 20 years so I notice things most homeowners don\'t. Aquatic Pools runs a clean, organized job site, their tradespeople actually know what they\'re doing, and they don\'t cut corners. The finished product is honestly Architectural Digest level.',
+      'OMG! They did a wonderful job bringing my vision to life. Amazing customer service, kept me updated the entire process. Provided quality work and finished sooner than I expected. I\'m extremely satisfied with how my pool area turned out! Highly recommend this company!!!',
   },
   {
     id: '7',
-    author: 'Lisa H.',
-    location: 'Tempe, AZ',
+    author: 'Barbara Haskins',
+    location: 'Scottsdale, AZ',
     quote:
-      'We were honestly pretty nervous about the whole thing. Big investment, first pool, didn\'t know what to expect. But the team was patient with all our questions and never made us feel dumb for asking. Pool came out beautiful and we use it every single week. No regrets whatsoever.',
+      'Communication and follow up with Sancheon and Arthur were wonderful. They listened to what I wanted to achieve and pricing is very fair.',
   },
   {
     id: '8',
-    author: 'Chris N.',
-    location: 'Mesa, AZ',
+    author: 'Rebecca Rivera',
+    location: 'Phoenix, AZ',
     quote:
-      'Sancheon was great to work with, very straight shooter. Pool finished ahead of schedule which I absolutely was not expecting. Quality is top notch. My backyard went from basically unused to the place we spend most of our evenings now.',
+      'Thank you so much for making our backyard come to life and bringing our vision to life.',
   },
   {
     id: '9',
