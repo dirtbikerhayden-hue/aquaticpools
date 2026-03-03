@@ -41,15 +41,27 @@ const steps = [
 
 export function LuxuryProcessSection() {
   return (
-    <section className="bg-white">
-      <div className="lg:grid lg:grid-cols-[3fr_2fr]">
-        {/* Left: steps */}
-        <div className="px-6 sm:px-10 lg:px-16 xl:pl-[max(4rem,calc((100vw-80rem)/2+4rem))] py-10 lg:py-14">
+    <section className="relative overflow-hidden">
+      {/* Full-bleed background image */}
+      <Image
+        src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png"
+        alt="Luxury pool architectural design"
+        fill
+        className="object-cover object-center"
+        sizes="100vw"
+      />
+
+      {/* Gradient overlay: opaque white on left, fades to transparent on right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/10" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-10 lg:py-14">
+        <div className="max-w-xl">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-stone-950 uppercase tracking-tight leading-tight mb-8">
             Luxury Pool Construction Process
           </h2>
 
-          <div className="divide-y divide-stone-200">
+          <div className="divide-y divide-stone-300">
             {steps.map((step) => (
               <div key={step.number} className="flex gap-4 py-3 first:pt-0">
                 {/* Ghost number */}
@@ -57,7 +69,7 @@ export function LuxuryProcessSection() {
                   className="flex-shrink-0 font-display font-black text-5xl sm:text-6xl select-none w-16"
                   style={{
                     color: 'transparent',
-                    WebkitTextStroke: '1.5px #d4d4d4',
+                    WebkitTextStroke: '1.5px #c7c7c7',
                     lineHeight: 1,
                   }}
                 >
@@ -68,7 +80,7 @@ export function LuxuryProcessSection() {
                   <h3 className="text-sm sm:text-base font-display font-bold text-stone-950 uppercase tracking-wide mb-0.5">
                     {step.title}
                   </h3>
-                  <p className="text-stone-500 text-xs leading-relaxed">
+                  <p className="text-stone-600 text-xs leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -83,19 +95,6 @@ export function LuxuryProcessSection() {
             >
               Get a Free Estimate
             </Link>
-          </div>
-        </div>
-
-        {/* Right: sticky image */}
-        <div className="hidden lg:block">
-          <div className="sticky top-0 h-screen relative overflow-hidden">
-            <Image
-              src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png"
-              alt="Luxury pool architectural design"
-              fill
-              className="object-cover object-center"
-              sizes="40vw"
-            />
           </div>
         </div>
       </div>
