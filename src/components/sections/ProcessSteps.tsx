@@ -23,7 +23,7 @@ const steps = [
 
 export function ProcessSteps() {
   return (
-    <section className="section-padding bg-gradient-to-b from-white via-sand-50/50 to-white">
+    <section className="section-padding">
       <div className="container-wide">
         <div className="text-center mb-12 lg:mb-16">
           <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
@@ -37,7 +37,7 @@ export function ProcessSteps() {
         </div>
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Connecting line (desktop only) */}
-          <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent" />
+          <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent" />
 
           {steps.map((step, i) => (
             <div key={step.number} className="relative text-center lg:text-left">

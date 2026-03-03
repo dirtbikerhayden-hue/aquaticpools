@@ -10,8 +10,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-925 text-slate-300 relative">
       {/* Premium gradient top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent" />
-      <div className="absolute top-px left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-500/20 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-gold/50 to-transparent" />
 
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
@@ -38,24 +37,24 @@ export function Footer() {
             <div className="space-y-3 text-sm">
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
-                className="flex items-center gap-2.5 text-slate-300 hover:text-brand-400 transition-colors"
+                className="flex items-center gap-2.5 text-slate-300 hover:text-accent-gold transition-colors"
               >
-                <Phone className="w-4 h-4 text-brand-500" />
+                <Phone className="w-4 h-4 text-accent-gold" />
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="flex items-center gap-2.5 text-slate-300 hover:text-brand-400 transition-colors"
+                className="flex items-center gap-2.5 text-slate-300 hover:text-accent-gold transition-colors"
               >
-                <Mail className="w-4 h-4 text-brand-500" />
+                <Mail className="w-4 h-4 text-accent-gold" />
                 {siteConfig.email}
               </a>
               <div className="flex items-center gap-2.5">
-                <MapPin className="w-4 h-4 text-brand-500 shrink-0" />
+                <MapPin className="w-4 h-4 text-accent-gold shrink-0" />
                 {siteConfig.address.full}
               </div>
               <div className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-brand-500 shrink-0" />
+                <Clock className="w-4 h-4 text-accent-gold shrink-0" />
                 Mon–Sat {siteConfig.hours.weekday}
               </div>
             </div>
@@ -69,7 +68,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-slate-400 hover:text-accent-gold transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -86,7 +85,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-slate-400 hover:text-accent-gold transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -103,7 +102,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-slate-400 hover:text-accent-gold transition-colors"
                   >
                     {link.label}
                   </Link>

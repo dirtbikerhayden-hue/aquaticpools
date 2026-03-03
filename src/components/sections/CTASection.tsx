@@ -27,8 +27,8 @@ export function CTASection({
       {/* Decorative orbs */}
       {variant === 'dark' && (
         <>
-          <div className="orb w-[400px] h-[400px] bg-brand-600/10 -top-[20%] -right-[10%]" />
-          <div className="orb w-[300px] h-[300px] bg-brand-400/5 -bottom-[15%] -left-[10%]" />
+          <div className="orb w-[400px] h-[400px] bg-accent-gold/5 -top-[20%] -right-[10%]" />
+          <div className="orb w-[300px] h-[300px] bg-accent-gold/3 -bottom-[15%] -left-[10%]" />
         </>
       )}
 

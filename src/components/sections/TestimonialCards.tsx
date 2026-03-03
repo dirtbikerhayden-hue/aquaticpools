@@ -30,9 +30,9 @@ const testimonials = [
 
 export function TestimonialCards() {
   return (
-    <section className="section-padding bg-gradient-to-b from-sand-50 to-white relative overflow-hidden">
+    <section className="section-padding relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="orb w-[300px] h-[300px] bg-brand-100/30 top-[10%] -right-[5%]" />
+      <div className="orb w-[300px] h-[300px] bg-accent-gold/5 top-[10%] -right-[5%]" />
 
       <div className="container-wide relative z-10">
         <div className="text-center mb-12 lg:mb-16">

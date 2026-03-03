@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/site-config';
 
 export function MobileBottomBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-white border-t border-slate-200 shadow-elevated safe-area-pb">
+    <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-[#faf8f3] border-t border-sand-200 shadow-elevated safe-area-pb">
       <div className="grid grid-cols-2 divide-x divide-slate-200">
         <a
           href={`tel:${siteConfig.phoneRaw}`}

@@ -14,7 +14,7 @@ export function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
+    <header className="sticky top-0 z-50 bg-[#faf8f3]/95 backdrop-blur-md border-b border-sand-200">
       {/* Main nav */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -97,7 +97,7 @@ export function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden border-t border-slate-100 bg-white animate-fade-in">
+        <div className="lg:hidden border-t border-sand-200 bg-[#faf8f3] animate-fade-in">
           <nav className="px-4 py-4 space-y-1" aria-label="Mobile navigation">
             {mainNav.map((item) => (
               <div key={item.href}>

@@ -132,7 +132,7 @@ export default function HomePage() {
                     {cat.features.map((f) => (
                       <span
                         key={f}
-                        className="px-3 py-1 text-xs font-medium bg-sand-50 text-slate-600 rounded-full border border-sand-200"
+                        className="px-3 py-1 text-xs font-medium bg-white/80 text-slate-600 rounded-full border border-sand-200"
                       >
                         {f}
                       </span>
@@ -158,7 +158,7 @@ export default function HomePage() {
       <ProcessSteps />
 
       {/* Projects Preview */}
-      <section className="section-padding bg-gradient-to-b from-sand-50 via-sand-50 to-white">
+      <section className="section-padding bg-sand-50/50">
         <div className="container-wide">
           <div className="text-center mb-12">
             <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">

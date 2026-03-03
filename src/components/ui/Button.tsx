@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 const variants = {
-  primary: 'bg-gradient-to-r from-brand-600 to-brand-700 text-white hover:from-brand-700 hover:to-brand-800 shadow-lg shadow-brand-600/25 hover:shadow-xl hover:shadow-brand-600/30 hover:-translate-y-0.5',
+  primary: 'bg-gradient-to-r from-brand-700 to-brand-900 text-white hover:from-brand-600 hover:to-brand-800 shadow-lg shadow-brand-900/30 hover:shadow-xl hover:shadow-brand-900/40 hover:-translate-y-0.5',
   secondary: 'bg-gradient-to-r from-slate-800 to-slate-900 text-white hover:from-slate-700 hover:to-slate-800 shadow-lg shadow-slate-900/25 hover:-translate-y-0.5',
   outline: 'border-2 border-brand-600 text-brand-700 hover:bg-brand-50 hover:shadow-md hover:-translate-y-0.5',
   ghost: 'text-brand-700 hover:bg-brand-50',

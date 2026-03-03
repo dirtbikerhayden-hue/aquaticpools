@@ -15,7 +15,7 @@ export function FAQAccordion({ faqs, title, subtitle }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="section-padding bg-gradient-to-b from-sand-50 to-white">
+    <section className="section-padding">
       <div className="container-narrow">
         {title && (
           <div className="text-center mb-12">
@@ -42,7 +42,7 @@ export function FAQAccordion({ faqs, title, subtitle }: FAQAccordionProps) {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between p-5 lg:p-6 text-left hover:bg-slate-50/50 transition-colors"
+                className="w-full flex items-center justify-between p-5 lg:p-6 text-left hover:bg-sand-50/50 transition-colors"
                 aria-expanded={openIndex === i}
               >
                 <span className={cn(
