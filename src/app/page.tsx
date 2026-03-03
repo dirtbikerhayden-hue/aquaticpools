@@ -81,12 +81,7 @@ const homeFaqs = [
 export default function HomePage() {
   return (
     <>
-      <Hero
-        headline="Luxury Pools Built for Arizona Living"
-        subheadline="Design-Driven. Built to Endure."
-        description="Custom pool construction and backyard transformations in Scottsdale, Paradise Valley, Phoenix, and Chandler. ROC Licensed #358080."
-        backgroundVideo="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a5e64c9c14997d7141fef2.mp4"
-      />
+      <Hero backgroundVideo="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a5e64c9c14997d7141fef2.mp4" />
 
       <TrustStrip />
 
