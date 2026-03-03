@@ -42,9 +42,9 @@ const steps = [
 export function LuxuryProcessSection() {
   return (
     <section className="bg-white">
-      <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-[3fr_2fr]">
+      <div className="lg:grid lg:grid-cols-[3fr_2fr]">
         {/* Left: steps */}
-        <div className="px-6 sm:px-10 lg:px-12 py-10 lg:py-14">
+        <div className="px-6 sm:px-10 lg:px-16 xl:pl-[max(4rem,calc((100vw-80rem)/2+4rem))] py-10 lg:py-14">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-stone-950 uppercase tracking-tight leading-tight mb-8">
             Luxury Pool Construction Process
           </h2>
