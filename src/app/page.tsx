@@ -178,13 +178,25 @@ export default function HomePage() {
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c66dca2020e413e3ab.jpg', title: 'Swim-Up Spa Fusion', location: 'Scottsdale' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c66dca20532013e3b1.png', title: 'Outdoor Living Space', location: 'Gilbert' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73edb6dca209fbe15bc98.jpg', title: 'Custom Pool Design', location: 'Tempe' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379452dd985fa4c04d193.jpg', title: 'Modern Lap Pool', location: 'Scottsdale' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/6974c4a759a77b4f11b34372.jpeg', title: 'Travertine Paradise', location: 'Paradise Valley' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/6974c4a759a77b76cab34373.jpg', title: 'Fire & Water Feature', location: 'Chandler' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69760ee7eb392b26b548a48a.jpg', title: 'Geometric Pool Build', location: 'Gilbert' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69760eeac1fa0c2cf9887c83.jpg', title: 'Tanning Ledge Retreat', location: 'Peoria' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/6983794518c335bf572a7221.jpg', title: 'Negative Edge Design', location: 'Phoenix' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379452dd9852b0804d194.jpg', title: 'Spa & Waterfall Combo', location: 'Scottsdale' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837945d017c38a9a6c0ba1.jpg', title: 'Desert Oasis Build', location: 'Mesa' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379454599861de148d551.jpg', title: 'Full Outdoor Kitchen', location: 'Tempe' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837945d017c3f0786c0ba0.jpg', title: 'Pebble Tec Remodel', location: 'Glendale' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379450708e4bafea22e7f.jpg', title: 'Pool & Pergola Package', location: 'Gilbert' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837dda0708e4fd18a33c2e.jpg', title: 'Luxury Family Pool', location: 'Chandler' },
             ].map((project, i) => {
-              const rotations = [-2, 1.5, -1, 2, -1.5, 1, -2.5];
+              const rotations = [-2, 1.5, -1, 2, -1.5, 1, -2.5, 1, -1, 2, -1.5, 0.5, -2, 1, -0.5, 2, -1, 1.5, -2, 0.5];
               return (
                 <div
                   key={i}
-                  className="bg-white p-3 pb-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 [&:nth-child(7)]:lg:col-start-2"
-                  style={{ transform: `rotate(${rotations[i]}deg)` }}
+                  className="bg-white p-3 pb-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
+                  style={{ transform: `rotate(${rotations[i % rotations.length]}deg)` }}
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
