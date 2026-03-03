@@ -7,6 +7,7 @@ import { Hero } from '@/components/sections/Hero';
 import { TrustStrip } from '@/components/sections/TrustStrip';
 import { ProcessSteps } from '@/components/sections/ProcessSteps';
 import { TestimonialCards } from '@/components/sections/TestimonialCards';
+import { LuxuryProcessSection } from '@/components/sections/LuxuryProcessSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { FAQAccordion } from '@/components/sections/FAQAccordion';
 import { Button } from '@/components/ui/Button';
@@ -195,6 +196,9 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <TestimonialCards />
+
+      {/* Luxury Process */}
+      <LuxuryProcessSection />
 
       {/* FAQ */}
       <FAQAccordion

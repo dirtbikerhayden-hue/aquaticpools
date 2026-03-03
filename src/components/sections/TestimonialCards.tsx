@@ -47,10 +47,14 @@ const testimonials = [
 export function TestimonialCards() {
   return (
     <section className="relative overflow-hidden py-20 lg:py-28">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978042da03785.jpg')" }}
+      {/* Video backdrop */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978c677a03781.mp4"
       />
       {/* Dark overlay to make reviews pop */}
       <div className="absolute inset-0 bg-black/60" />
