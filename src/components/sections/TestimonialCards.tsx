@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
@@ -174,37 +174,29 @@ const testimonials = [
   },
 ];
 
+const CARDS_PER_PAGE = 8; // 2 rows × 4 cols on desktop
+const TOTAL_PAGES = Math.ceil(testimonials.length / CARDS_PER_PAGE);
+
 export function TestimonialCards() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const [page, setPage] = useState(0);
+  const [timerKey, setTimerKey] = useState(0);
 
-  const scrollNext = useCallback(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 8;
-    el.scrollTo({ left: atEnd ? 0 : el.scrollLeft + el.clientWidth, behavior: 'smooth' });
-  }, []);
+  const handleNext = () => {
+    setPage((p) => (p + 1) % TOTAL_PAGES);
+    setTimerKey((k) => k + 1);
+  };
+  const handlePrev = () => {
+    setPage((p) => (p - 1 + TOTAL_PAGES) % TOTAL_PAGES);
+    setTimerKey((k) => k + 1);
+  };
 
-  const scrollPrev = useCallback(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    el.scrollBy({ left: -el.clientWidth, behavior: 'smooth' });
-  }, []);
-
-  const resetTimer = useCallback(() => {
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(scrollNext, 6000);
-  }, [scrollNext]);
-
+  // Auto-advance; resets when timerKey changes (i.e. user clicked an arrow)
   useEffect(() => {
-    timerRef.current = setInterval(scrollNext, 6000);
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [scrollNext]);
+    const timer = setInterval(() => setPage((p) => (p + 1) % TOTAL_PAGES), 7000);
+    return () => clearInterval(timer);
+  }, [timerKey]);
 
-  const handlePrev = () => { scrollPrev(); resetTimer(); };
-  const handleNext = () => { scrollNext(); resetTimer(); };
+  const visible = testimonials.slice(page * CARDS_PER_PAGE, (page + 1) * CARDS_PER_PAGE);
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-28">
@@ -232,9 +224,8 @@ export function TestimonialCards() {
           </h2>
         </div>
 
-        {/* Carousel */}
+        {/* Grid with arrows */}
         <div className="relative">
-          {/* Left arrow */}
           <button
             onClick={handlePrev}
             className="absolute -left-3 lg:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
@@ -243,17 +234,12 @@ export function TestimonialCards() {
             <ChevronLeft className="w-5 h-5" />
           </button>
 
-          {/* Scroll container */}
-          <div
-            ref={scrollRef}
-            className="flex gap-4 overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
-            {testimonials.map((t) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
+            {visible.map((t) => (
               <div
                 key={t.id}
-                className="snap-start shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(25%-12px)] bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 flex flex-col gap-3"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 flex flex-col gap-3"
               >
-                {/* Name + location + Google badge */}
                 <div className="flex items-start justify-between gap-2">
                   <div>
                     <span className="font-semibold text-white text-sm leading-snug block">{t.author}</span>
@@ -261,21 +247,16 @@ export function TestimonialCards() {
                   </div>
                   <span className="text-white/70 font-medium text-xs tracking-wide shrink-0 mt-0.5">Google</span>
                 </div>
-
-                {/* Stars */}
                 <div className="flex gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-
-                {/* Review text */}
                 <p className="text-white/85 text-sm leading-relaxed line-clamp-5">{t.quote}</p>
               </div>
             ))}
           </div>
 
-          {/* Right arrow */}
           <button
             onClick={handleNext}
             className="absolute -right-3 lg:-right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/15 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white hover:bg-white/30 transition-colors"
@@ -283,6 +264,18 @@ export function TestimonialCards() {
           >
             <ChevronRight className="w-5 h-5" />
           </button>
+        </div>
+
+        {/* Page dots */}
+        <div className="flex justify-center gap-2 mt-8">
+          {Array.from({ length: TOTAL_PAGES }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => { setPage(i); setTimerKey((k) => k + 1); }}
+              aria-label={`Page ${i + 1}`}
+              className={`h-2 rounded-full transition-all duration-300 ${i === page ? 'w-6 bg-accent-gold' : 'w-2 bg-white/35 hover:bg-white/60'}`}
+            />
+          ))}
         </div>
       </div>
     </section>
