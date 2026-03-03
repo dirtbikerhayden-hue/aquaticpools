@@ -40,7 +40,7 @@ export function Hero({ backgroundVideo }: HeroProps) {
         <button
           onClick={toggleMute}
           aria-label={muted ? 'Unmute video' : 'Mute video'}
-          className="absolute bottom-6 right-6 z-30 flex items-center gap-2 px-4 py-2.5 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 text-white text-sm font-medium hover:bg-black/60 transition-all duration-200"
+          className="absolute bottom-6 left-6 z-30 flex items-center gap-2 px-4 py-2.5 rounded-full bg-black/40 backdrop-blur-sm border border-white/20 text-white text-sm font-medium hover:bg-black/60 transition-all duration-200"
         >
           {muted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
           <span>{muted ? 'Unmute' : 'Mute'}</span>
