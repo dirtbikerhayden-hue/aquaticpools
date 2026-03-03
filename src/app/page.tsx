@@ -154,9 +154,9 @@ export default function HomePage() {
       <ProcessSteps />
 
       {/* Projects Preview */}
-      <section className="section-padding bg-sand-50/50">
+      <section className="section-padding">
         <div className="container-wide">
-          <div className="text-center mb-12">
+          <div className="text-center mb-14">
             <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
               <span className="w-6 h-px bg-accent-gold" />
               <span className="gradient-text-gold">Our Work</span>
@@ -169,26 +169,43 @@ export default function HomePage() {
               Browse our portfolio of completed luxury pools and outdoor living spaces across Scottsdale, Paradise Valley, Phoenix, and Chandler.
             </p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-            {['', '', '', '', '', ''].map((src, i) =>
-              src ? (
-                <div key={i} className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-soft bg-slate-200">
-                  <Image
-                    src={src}
-                    alt="Luxury pool project by Aquatic Pools and Spas"
-                    fill
-                    sizes="(max-width: 1024px) 50vw, 33vw"
-                    quality={70}
-                    priority={i < 4}
-                    className="object-cover object-center"
-                  />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            {[
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978489aa0377d.jpg', title: 'Desert Modern Retreat', location: 'Scottsdale' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978042da03785.jpg', title: 'Infinity Edge Oasis', location: 'Paradise Valley' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c673a202678bdf37ca.jpg', title: 'Backyard Escape', location: 'Phoenix' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c663e506601157d335.jpg', title: 'Resort-Style Build', location: 'Chandler' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c66dca2020e413e3ab.jpg', title: 'Swim-Up Spa Fusion', location: 'Scottsdale' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c66dca20532013e3b1.png', title: 'Outdoor Living Space', location: 'Gilbert' },
+              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73edb6dca209fbe15bc98.jpg', title: 'Custom Pool Design', location: 'Tempe' },
+            ].map((project, i) => {
+              const rotations = [-2, 1.5, -1, 2, -1.5, 1, -2.5];
+              return (
+                <div
+                  key={i}
+                  className="bg-white p-3 pb-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 [&:nth-child(7)]:lg:col-start-2"
+                  style={{ transform: `rotate(${rotations[i]}deg)` }}
+                >
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={project.src}
+                      alt={`${project.title} — Aquatic Pools and Spas`}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={75}
+                      priority={i < 3}
+                      className="object-cover object-center"
+                    />
+                  </div>
+                  <div className="mt-3 flex justify-between items-end px-1">
+                    <span className="font-handwriting text-slate-700 text-xl leading-tight">{project.title}</span>
+                    <span className="font-handwriting text-slate-400 text-lg leading-tight shrink-0 ml-2">{project.location}</span>
+                  </div>
                 </div>
-              ) : (
-                <div key={i} className="image-placeholder-premium aspect-[4/3] rounded-2xl shadow-soft" />
-              )
-            )}
+              );
+            })}
           </div>
-          <div className="text-center mt-10">
+          <div className="text-center mt-14">
             <Button href="/gallery">View Full Gallery</Button>
           </div>
         </div>
