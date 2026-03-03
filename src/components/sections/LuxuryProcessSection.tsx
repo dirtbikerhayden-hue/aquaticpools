@@ -56,7 +56,7 @@ export function LuxuryProcessSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-10 lg:py-14">
-        <div className="max-w-xl">
+        <div className="max-w-xl text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-stone-950 uppercase tracking-tight leading-tight mb-8">
             Luxury Pool Construction Process
           </h2>
