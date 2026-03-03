@@ -31,8 +31,8 @@ const config: Config = {
           400: '#b8a888',
         },
         accent: {
-          gold: '#c5a55a',
-          copper: '#b87333',
+          gold: '#D97A3A',
+          copper: '#B5612A',
         },
       },
       fontFamily: {
