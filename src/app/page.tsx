@@ -11,6 +11,7 @@ import { LuxuryProcessSection } from '@/components/sections/LuxuryProcessSection
 import { CTASection } from '@/components/sections/CTASection';
 import { FAQAccordion } from '@/components/sections/FAQAccordion';
 import { Button } from '@/components/ui/Button';
+import { FadeIn } from '@/components/ui/FadeIn';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Aquatic Pools and Spas | Luxury Pool Builder in Phoenix & Scottsdale, AZ',
@@ -89,7 +90,7 @@ export default function HomePage() {
       {/* Services Section */}
       <section className="section-padding">
         <div className="container-wide">
-          <div className="text-center mb-12 lg:mb-16">
+          <FadeIn className="text-center mb-12 lg:mb-16">
             <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
               <span className="w-6 h-px bg-accent-gold" />
               <span className="gradient-text-gold">What We Build</span>
@@ -101,14 +102,14 @@ export default function HomePage() {
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               From resort-style pool builds to complete backyard transformations, all designed with architectural precision and built to last in the Arizona climate.
             </p>
-          </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {serviceCategories.map((cat) => {
+            {serviceCategories.map((cat, i) => {
               const Icon = cat.icon;
               return (
+                <FadeIn key={cat.href} delay={i * 120} direction="up">
                 <Link
-                  key={cat.href}
                   href={cat.href}
                   className="group relative bg-white rounded-2xl border border-slate-100 p-8 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1.5 overflow-hidden"
                 >
@@ -138,6 +139,7 @@ export default function HomePage() {
                     Explore Services <ArrowRight className="w-4 h-4" />
                   </span>
                 </Link>
+                </FadeIn>
               );
             })}
           </div>
@@ -156,7 +158,7 @@ export default function HomePage() {
       {/* Projects Preview */}
       <section className="section-padding">
         <div className="container-wide">
-          <div className="text-center mb-14">
+          <FadeIn className="text-center mb-14">
             <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
               <span className="w-6 h-px bg-accent-gold" />
               <span className="gradient-text-gold">Our Work</span>
@@ -168,7 +170,7 @@ export default function HomePage() {
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Browse our portfolio of completed luxury pools and outdoor living spaces across Scottsdale, Paradise Valley, Phoenix, and Chandler.
             </p>
-          </div>
+          </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {[
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978489aa0377d.jpg', title: 'Desert Modern Retreat', location: 'Scottsdale' },
@@ -192,10 +194,10 @@ export default function HomePage() {
             ].map((project, i) => {
               const rotations = [-4, 3, -2.5, 4.5, -3.5, 2, -5, 3.5, -2, 4, -3, 1.5, -4.5, 2.5, -1.5, 4, -3, 3, -4.5, 1.5];
               return (
+                <FadeIn key={i} delay={Math.min(i % 3, 2) * 100}>
                 <div
-                  key={i}
-                  className="bg-white p-3 pb-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1"
-                  style={{ transform: `rotate(${rotations[i % rotations.length]}deg)` }}
+                  className="polaroid-card bg-white p-3 pb-8 shadow-card cursor-pointer"
+                  style={{ '--tilt': `${rotations[i % rotations.length]}deg` } as React.CSSProperties}
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
@@ -205,7 +207,7 @@ export default function HomePage() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       quality={75}
                       priority={i < 3}
-                      className="object-cover object-center"
+                      className="polaroid-image object-cover object-center"
                     />
                   </div>
                   <div className="mt-3 flex justify-between items-end px-1">
@@ -213,6 +215,7 @@ export default function HomePage() {
                     <span className="font-handwriting text-slate-400 text-lg leading-tight shrink-0 ml-2">{project.location}</span>
                   </div>
                 </div>
+                </FadeIn>
               );
             })}
           </div>

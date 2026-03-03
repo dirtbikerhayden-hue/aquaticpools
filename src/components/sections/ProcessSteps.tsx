@@ -1,3 +1,5 @@
+import { FadeIn } from '@/components/ui/FadeIn';
+
 const steps = [
   {
     number: '01',
@@ -40,7 +42,8 @@ export function ProcessSteps() {
           <div className="hidden lg:block absolute top-10 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent" />
 
           {steps.map((step, i) => (
-            <div key={step.number} className="relative text-center lg:text-left">
+            <FadeIn key={step.number} delay={i * 120} direction="up">
+            <div className="relative text-center lg:text-left">
               {/* Step circle */}
               <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-brand-50 to-brand-100 border-2 border-brand-200 mb-5 shadow-soft">
                 <span className="text-xl font-display font-bold gradient-text">{step.number}</span>
@@ -56,6 +59,7 @@ export function ProcessSteps() {
                 {step.description}
               </p>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

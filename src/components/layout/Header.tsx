@@ -61,7 +61,7 @@ export function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    'flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap',
+                    'nav-underline flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap',
                     isTransparent
                       ? 'text-white/90 hover:text-white hover:bg-white/10'
                       : 'text-slate-700 hover:text-brand-600 hover:bg-brand-50/50',
