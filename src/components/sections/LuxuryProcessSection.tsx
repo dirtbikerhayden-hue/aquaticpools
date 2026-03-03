@@ -41,7 +41,7 @@ const steps = [
 
 export function LuxuryProcessSection() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden min-h-screen">
       {/* Full-bleed background image */}
       <Image
         src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png"
