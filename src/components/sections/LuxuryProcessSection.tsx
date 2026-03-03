@@ -54,12 +54,13 @@ export function LuxuryProcessSection() {
         style={{
           backgroundImage:
             "url('https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png')",
-          backgroundSize: 'cover',
+          backgroundSize: '58% auto',
+          backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right center',
         }}
       />
       {/* Gradient: opaque white on left for text, fades to transparent on right to reveal image */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
