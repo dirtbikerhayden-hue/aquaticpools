@@ -53,7 +53,7 @@ export function LuxuryProcessSection() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73b54f1838272d8a1282e.png')",
+            "url('https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'right center',
         }}
