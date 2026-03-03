@@ -87,8 +87,8 @@ export function LuxuryProcessSection() {
         </div>
 
         {/* Right: sticky image */}
-        <div className="hidden lg:block relative">
-          <div className="sticky top-0 h-screen">
+        <div className="hidden lg:block">
+          <div className="sticky top-0 h-screen relative overflow-hidden">
             <Image
               src="https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a73e4a6dca20442c15a27b.png"
               alt="Luxury pool architectural design"
