@@ -1,88 +1,108 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 const steps = [
   {
     number: '01',
     title: 'Start With Your Vision',
-    description: 'Complete our custom design intake so we understand your aesthetic preferences, lifestyle needs, and outdoor wish list.',
+    description:
+      'Complete our custom design intake to help us understand your aesthetic preferences, lifestyle needs, and outdoor wish list. This is where your vision begins to take shape.',
   },
   {
     number: '02',
     title: 'We Learn How You Live',
-    description: 'Our design team digs deeper to understand how you use your space — entertaining, relaxing, or family time.',
+    description:
+      'No two homeowners are alike. Our design team digs deeper to understand how you use your space—whether it\'s for entertaining, relaxing, or family time. Your lifestyle drives the design.',
   },
   {
     number: '03',
     title: 'Site Survey & Measurements',
-    description: 'We gather precise photos and dimensions of your property to ensure accurate planning and design execution.',
+    description:
+      'An Aquatic Pools surveyor will schedule a time to gather precise photos and dimensions of your property. These measurements are essential for accurate planning and design execution.',
   },
   {
     number: '04',
     title: 'Custom Pool & Outdoor Design',
-    description: 'Our experts craft a tailored design blending style, function, and buildability — a curated outdoor environment.',
+    description:
+      'Our experts craft a tailored design that blends style, function, and buildability. This isn\'t just a pool—it\'s a curated outdoor environment designed to elevate your space.',
   },
   {
     number: '05',
     title: 'Your Design Reveal',
-    description: 'See your custom design for the first time. We refine every detail together before moving to engineering.',
+    description:
+      'See your custom pool design for the first time. After the reveal, we collaborate with you to refine every detail. Once approved, our team prepares it for engineering, estimating, and site analysis.',
   },
   {
     number: '06',
     title: 'Detailed Estimate Review',
-    description: 'A transparent, line-by-line cost breakdown with no surprises — so you can make confident decisions.',
+    description:
+      'Receive a transparent, line-by-line cost breakdown with no surprises. We walk you through each element so you can make confident decisions that align with both your vision and budget.',
   },
   {
     number: '07',
     title: 'Build Begins',
-    description: 'With plans finalized and permits underway, our specialized build team takes you from excavation to finish.',
+    description:
+      'With plans finalized and permits underway, our specialized build team takes over. From excavation to finish, we handle everything—delivering your luxury outdoor space with precision, quality, and speed.',
   },
 ];
 
 export function LuxuryProcessSection() {
   return (
-    <section className="bg-stone-950 py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-        {/* Header */}
-        <div className="mb-14">
-          <p className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-accent-gold mb-3">
-            <span className="w-5 h-px bg-accent-gold" />
-            How It Works
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-white uppercase tracking-tight">
-            Our Process
+    <section className="bg-white">
+      <div className="max-w-7xl mx-auto lg:grid lg:grid-cols-[3fr_2fr]">
+        {/* Left: steps */}
+        <div className="px-6 sm:px-10 lg:px-16 py-20 lg:py-28">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-stone-950 uppercase tracking-tight leading-tight mb-16">
+            Luxury Pool Construction Process
           </h2>
-        </div>
 
-        {/* Steps grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
-          {steps.map((step) => (
-            <div
-              key={step.number}
-              className="bg-stone-950 p-7 flex flex-col gap-3 hover:bg-stone-900 transition-colors duration-200"
-            >
-              <span className="text-accent-gold font-display font-bold text-sm tracking-widest">
-                {step.number}
-              </span>
-              <h3 className="text-white font-display font-semibold text-base leading-snug">
-                {step.title}
-              </h3>
-              <p className="text-stone-400 text-sm leading-relaxed">
-                {step.description}
-              </p>
-            </div>
-          ))}
+          <div className="space-y-0 divide-y divide-stone-200">
+            {steps.map((step) => (
+              <div key={step.number} className="flex gap-6 py-8 first:pt-0">
+                {/* Ghost number */}
+                <span
+                  className="flex-shrink-0 font-display font-black text-7xl sm:text-8xl leading-none select-none"
+                  style={{
+                    color: 'transparent',
+                    WebkitTextStroke: '1.5px #d4d4d4',
+                    lineHeight: 1,
+                  }}
+                >
+                  {step.number}
+                </span>
+                {/* Content */}
+                <div className="pt-1">
+                  <h3 className="text-lg sm:text-xl font-display font-bold text-stone-950 uppercase tracking-wide mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-stone-500 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
 
-          {/* CTA cell */}
-          <div className="bg-stone-950 p-7 flex flex-col justify-center gap-4 hover:bg-stone-900 transition-colors duration-200">
-            <p className="text-white font-display font-semibold text-base">
-              Ready to get started?
-            </p>
+          <div className="mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-accent-gold text-accent-gold text-sm font-semibold tracking-wide hover:bg-accent-gold hover:text-white transition-colors self-start"
+              className="inline-flex items-center gap-2 px-7 py-3 bg-accent-gold text-white text-sm font-semibold tracking-wide uppercase rounded-full hover:bg-yellow-600 transition-colors"
             >
-              Free Estimate
+              Get a Free Estimate
             </Link>
+          </div>
+        </div>
+
+        {/* Right: sticky image */}
+        <div className="hidden lg:block relative">
+          <div className="sticky top-0 h-screen">
+            <Image
+              src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80"
+              alt="Luxury pool architectural design"
+              fill
+              className="object-cover"
+              sizes="40vw"
+            />
           </div>
         </div>
       </div>
