@@ -186,7 +186,6 @@ export default function HomePage() {
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/6983794518c335bf572a7221.jpg', title: 'Negative Edge Design', location: 'Phoenix' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379452dd9852b0804d194.jpg', title: 'Spa & Waterfall Combo', location: 'Scottsdale' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837945d017c38a9a6c0ba1.jpg', title: 'Desert Oasis Build', location: 'Mesa' },
-              { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379454599861de148d551.jpg', title: 'Full Outdoor Kitchen', location: 'Tempe' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837945d017c3f0786c0ba0.jpg', title: 'Pebble Tec Remodel', location: 'Glendale' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379450708e4bafea22e7f.jpg', title: 'Pool & Pergola Package', location: 'Gilbert' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837dda0708e4fd18a33c2e.jpg', title: 'Luxury Family Pool', location: 'Chandler' },
