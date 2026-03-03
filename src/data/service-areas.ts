@@ -54,11 +54,11 @@ export const serviceAreas: ServiceAreaData[] = [
     body: [
       {
         heading: 'Bespoke Pool Design for Paradise Valley Estates',
-        text: "Paradise Valley properties often feature expansive lots, stunning mountain views, and architectural styles ranging from contemporary desert modern to Mediterranean. Our design process starts with a deep understanding of your property, your lifestyle, and your aesthetic vision. We then develop a custom pool design that integrates seamlessly with your home's architecture and the natural landscape — creating an outdoor environment that feels intentional, not added on.",
+        text: "Paradise Valley properties often feature expansive lots, stunning mountain views, and architectural styles ranging from contemporary desert modern to Mediterranean. Our design process starts with a deep understanding of your property, your lifestyle, and your aesthetic vision. We then develop a custom pool design that integrates seamlessly with your home's architecture and the natural landscape, creating an outdoor environment that feels intentional, not added on.",
       },
       {
         heading: 'The Finest Materials and Craftsmanship',
-        text: 'Paradise Valley clients expect — and receive — the finest materials and craftsmanship available. We source premium pool finishes, natural stone coping, custom tile work, and integrated lighting systems that transform a pool into a work of art. Our team includes experienced craftsmen who take pride in every detail, from the geometry of the shell to the grout lines in the tile.',
+        text: 'Paradise Valley clients expect and receive the finest materials and craftsmanship available. We source premium pool finishes, natural stone coping, custom tile work, and integrated lighting systems that transform a pool into a work of art. Our team includes experienced craftsmen who take pride in every detail, from the geometry of the shell to the grout lines in the tile.',
       },
     ],
   },
@@ -76,7 +76,7 @@ export const serviceAreas: ServiceAreaData[] = [
     body: [
       {
         heading: 'Phoenix Pool Construction Experts',
-        text: "Phoenix is one of the largest pool markets in the country, and for good reason — the Arizona climate makes a backyard pool an essential part of the lifestyle. Aquatic Pools and Spas distinguishes itself in this market through our commitment to design quality, construction integrity, and client communication. We manage every aspect of your build, from permit procurement through final inspection, so you can enjoy a seamless, stress-free experience.",
+        text: "Phoenix is one of the largest pool markets in the country, and for good reason. The Arizona climate makes a backyard pool an essential part of the lifestyle. Aquatic Pools and Spas distinguishes itself in this market through our commitment to design quality, construction integrity, and client communication. We manage every aspect of your build, from permit procurement through final inspection, so you can enjoy a seamless, stress-free experience.",
       },
       {
         heading: 'Pool Remodeling in Phoenix',

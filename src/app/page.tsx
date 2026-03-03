@@ -70,7 +70,7 @@ const homeFaqs = [
   {
     question: 'Can I see a 3D design before construction starts?',
     answer:
-      'Yes — every project includes a detailed 3D design presentation so you can visualize your finished pool and outdoor space before a single shovel hits the ground. We refine the design together until it is exactly right.',
+      'Yes, every project includes a detailed 3D design presentation so you can visualize your finished pool and outdoor space before a single shovel hits the ground. We refine the design together until it is exactly right.',
   },
   {
     question: 'How long does pool construction take in Arizona?',
@@ -99,7 +99,7 @@ export default function HomePage() {
               Crafted for the Arizona Lifestyle
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              From resort-style pool builds to complete backyard transformations — all designed with architectural precision and built to last in the Arizona climate.
+              From resort-style pool builds to complete backyard transformations, all designed with architectural precision and built to last in the Arizona climate.
             </p>
           </div>
 

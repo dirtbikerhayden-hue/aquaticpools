@@ -17,7 +17,7 @@ const steps = [
   {
     number: '04',
     title: 'Expert Construction',
-    description: 'Our experienced crew manages every phase of the build — permits, excavation, plumbing, electrical, finishing — to deliver your completed project.',
+    description: 'Our experienced crew manages every phase of the build, including permits, excavation, plumbing, electrical, and finishing, to deliver your completed project.',
   },
 ];
 

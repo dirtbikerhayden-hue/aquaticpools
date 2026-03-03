@@ -11,7 +11,7 @@ const steps = [
     number: '02',
     title: 'We Learn How You Live',
     description:
-      'No two homeowners are alike. Our design team digs deeper to understand how you use your space—whether it\'s for entertaining, relaxing, or family time. Your lifestyle drives the design.',
+      'No two homeowners are alike. Our design team digs deeper to understand how you use your space, whether it\'s for entertaining, relaxing, or family time. Your lifestyle drives the design.',
   },
   {
     number: '03',
@@ -23,7 +23,7 @@ const steps = [
     number: '04',
     title: 'Custom Pool & Outdoor Design',
     description:
-      'Our experts craft a tailored design that blends style, function, and buildability. This isn\'t just a pool—it\'s a curated outdoor environment designed to elevate your space.',
+      'Our experts craft a tailored design that blends style, function, and buildability. This isn\'t just a pool, it\'s a curated outdoor environment designed to elevate your space.',
   },
   {
     number: '05',
@@ -41,7 +41,7 @@ const steps = [
     number: '07',
     title: 'Build Begins',
     description:
-      'With plans finalized and permits underway, our specialized build team takes over. From excavation to finish, we handle everything—delivering your luxury outdoor space with precision, quality, and speed.',
+      'With plans finalized and permits underway, our specialized build team takes over. From excavation to finish, we handle everything, delivering your luxury outdoor space with precision, quality, and speed.',
   },
 ];
 

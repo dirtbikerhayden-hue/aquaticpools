@@ -18,7 +18,7 @@ const values = [
   { icon: Shield, title: 'Craftsmanship First', description: 'We never cut corners. Every pool is built with the materials, techniques, and attention to detail that ensure it looks stunning and performs reliably for decades.' },
   { icon: Users, title: 'Design-Driven Approach', description: 'We treat every project as a work of architecture. Your pool should feel like a natural extension of your home, not an afterthought dropped in the backyard.' },
   { icon: Eye, title: 'Transparent Process', description: 'From 3D design approval to clear pricing, you always know exactly what to expect. No surprises, no hidden costs, no pressure.' },
-  { icon: Award, title: 'ROC Licensed & Insured', description: 'ROC #358080. Full licensing, bonding, and comprehensive insurance coverage — protecting you and your property at every stage of the build.' },
+  { icon: Award, title: 'ROC Licensed & Insured', description: 'ROC #358080. Full licensing, bonding, and comprehensive insurance coverage, protecting you and your property at every stage of the build.' },
 ];
 
 export default function AboutPage() {
@@ -40,13 +40,13 @@ export default function AboutPage() {
             </h1>
             <div className="prose prose-lg text-slate-600 space-y-4">
               <p>
-                Aquatic Pools and Spas was built on a conviction that luxury outdoor living should be accessible to every homeowner who demands the best. We combine architectural design thinking with hands-on construction expertise to create pools and outdoor environments that are as beautiful as they are enduring — built specifically for the Arizona lifestyle.
+                Aquatic Pools and Spas was built on a conviction that luxury outdoor living should be accessible to every homeowner who demands the best. We combine architectural design thinking with hands-on construction expertise to create pools and outdoor environments that are as beautiful as they are enduring, built specifically for the Arizona lifestyle.
               </p>
               <p>
                 Based in Phoenix and serving Scottsdale, Paradise Valley, Chandler, Gilbert, Tempe, and the surrounding metro area, our team manages every aspect of your project from initial design consultation through final walkthrough. ROC Licensed #358080, we are fully insured and committed to the highest standards of construction quality and client communication.
               </p>
               <p>
-                What sets us apart is a relentless focus on design integrity. Every project begins with a detailed consultation and a photorealistic 3D rendering so you can visualize your completed pool and outdoor space before construction begins. We refine that vision together until it is exactly right — then we build it.
+                What sets us apart is a relentless focus on design integrity. Every project begins with a detailed consultation and a photorealistic 3D rendering so you can visualize your completed pool and outdoor space before construction begins. We refine that vision together until it is exactly right, then we build it.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-slate-600 leading-relaxed text-base lg:text-lg">
-                Aquatic Pools and Spas was founded by builders who believed Arizona homeowners deserved a pool company that led with design rather than just price. Too many pools in the Valley are built to a budget without a vision. We built this company to change that — bringing the kind of thoughtful, architecture-forward design process that you would expect from a custom home builder to the pool and outdoor living industry. Our growth has been driven entirely by referrals from clients who saw the difference and told their neighbors. That word-of-mouth reputation is something we protect by never compromising on quality, communication, or follow-through.
+                Aquatic Pools and Spas was founded by builders who believed Arizona homeowners deserved a pool company that led with design rather than just price. Too many pools in the Valley are built to a budget without a vision. We built this company to change that, bringing the kind of thoughtful, architecture-forward design process that you would expect from a custom home builder to the pool and outdoor living industry. Our growth has been driven entirely by referrals from clients who saw the difference and told their neighbors. That word-of-mouth reputation is something we protect by never compromising on quality, communication, or follow-through.
               </p>
             </div>
             <div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 A Complete Outdoor Living Partner
               </h2>
               <p className="text-slate-600 leading-relaxed text-base lg:text-lg">
-                The pool is the centerpiece, but the best outdoor environments are designed as a whole. Aquatic Pools and Spas integrates pool construction with premium hardscaping, outdoor kitchens, fire features, pergolas, and shade structures — all designed cohesively so your backyard feels intentional from every angle. Working with one team means one design vision, one schedule, and one point of contact, which produces better results and a far smoother experience than coordinating multiple contractors.
+                The pool is the centerpiece, but the best outdoor environments are designed as a whole. Aquatic Pools and Spas integrates pool construction with premium hardscaping, outdoor kitchens, fire features, pergolas, and shade structures, all designed cohesively so your backyard feels intentional from every angle. Working with one team means one design vision, one schedule, and one point of contact, which produces better results and a far smoother experience than coordinating multiple contractors.
               </p>
             </div>
             <div>
