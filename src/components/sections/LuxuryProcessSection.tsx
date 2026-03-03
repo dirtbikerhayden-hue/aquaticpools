@@ -55,7 +55,7 @@ export function LuxuryProcessSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/10" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="max-w-xl text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-stone-950 uppercase tracking-tight leading-tight mb-8">
             Luxury Pool Construction Process
