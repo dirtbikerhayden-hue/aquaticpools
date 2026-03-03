@@ -1,80 +1,95 @@
 import { Star } from 'lucide-react';
 
-/* TODO: Replace with real testimonials from verified customers. */
 const testimonials = [
   {
-    id: 'placeholder-1',
-    quote: "We got quotes from several pool companies and Aquatic Pools was the only team that actually listened to what we wanted. The 3D design blew us away before they even broke ground. Pool was finished on schedule and it looks exactly like the rendering. Our backyard is completely transformed.",
-    author: 'Jason R.',
-    location: 'Scottsdale, AZ',
-    service: 'Luxury Pool Construction',
-    rating: 5,
+    id: '1',
+    author: 'Erica White',
+    quote: "Aquatic Pools exceeded all our expectations! From start to finish, their team demonstrated professionalism, creativity, and attention to detail. Even after the project was completed, their customer service remained top-notch. We couldn't be happier with the result—our new pool is absolutely stunning! Highly recommend Aquatic Pools for anyone looking for quality and excellence.",
   },
   {
-    id: 'placeholder-2',
-    quote: "Communication was excellent throughout the entire build. They told us what was happening every step of the way, the crew was professional, and they cleaned up every day before leaving. The finished product exceeded our expectations. We use the pool every weekend.",
-    author: 'Amber T.',
-    location: 'Paradise Valley, AZ',
-    service: 'Custom Pool Construction',
-    rating: 5,
+    id: '2',
+    author: 'Rich G.',
+    quote: "They met every deadline and kept us informed of all progress. We are delighted with the outcome and will definitely recommend their services to our network of family, friends, and neighbors. Additionally, we were pleasantly surprised and grateful for the thoughtful pool gifts presented to us upon project completion. Thank you for your outstanding work.",
   },
   {
-    id: 'placeholder-3',
-    quote: "We had Aquatic Pools remodel our old pool and add an outdoor kitchen. The attention to detail was impressive — the tile work, the coping, the equipment upgrades. It looks like a completely different backyard. Already referred them to two of our neighbors.",
-    author: 'Derek M.',
-    location: 'Chandler, AZ',
-    service: 'Pool Remodel & Hardscaping',
-    rating: 5,
+    id: '3',
+    author: 'Victoria',
+    quote: "I definitely recommend this pool company to friends and family — they did a fantastic job. If I could give them more than five stars they certainly deserve it. The Aquatic team were professional, dependable and all work was completely on time. I love spending time in my back yard. Thank you Aquatic Pools!",
+  },
+  {
+    id: '4',
+    author: 'Jacob Flores',
+    quote: "So happy with the way our pool turned out and the service that Aquatic Pools provided. They were communicative throughout the whole process and transformed our backyard into exactly how we imagined. I would recommend them to anyone who is considering building a pool!",
+  },
+  {
+    id: '5',
+    author: 'Naim Rasheed',
+    quote: "We got our pool remodeled from this company and we had a wonderful experience. Arthur was very informative and suggested ways to save money. Our family was very impressed with the communication and fair pricing.",
+  },
+  {
+    id: '6',
+    author: 'John Smith',
+    quote: "OMG! They did a wonderful job bringing my vision to life. Amazing customer service, kept me updated the entire process. Provided quality work and finished sooner than I expected. I'm extremely satisfied with how my pool area turned out! Highly recommend this company!",
+  },
+  {
+    id: '7',
+    author: 'Barbara Haskins',
+    quote: "Communication and follow up with Sancheon and Arthur were wonderful. They listened to what I wanted to achieve and pricing is very fair.",
+  },
+  {
+    id: '8',
+    author: 'Rebecca Rivera',
+    quote: "Thank you so much for making our backyard come to life and bringing our vision to life.",
   },
 ];
 
+
 export function TestimonialCards() {
   return (
-    <section className="section-padding relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="orb w-[300px] h-[300px] bg-accent-gold/5 top-[10%] -right-[5%]" />
+    <section className="relative overflow-hidden py-20 lg:py-28">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69a734c6b86978042da03785.jpg')" }}
+      />
+      {/* Dark overlay to make reviews pop */}
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="container-wide relative z-10">
+        {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider uppercase mb-3">
             <span className="w-6 h-px bg-accent-gold" />
             <span className="gradient-text-gold">Client Experiences</span>
             <span className="w-6 h-px bg-accent-gold" />
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white">
             What Our Clients Say
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+        {/* Grid: 4 cols desktop, 2 tablet, 1 mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="relative bg-white rounded-2xl p-6 lg:p-8 shadow-soft border border-slate-100 border-l-4 border-l-brand-500 hover:shadow-card transition-all duration-300"
+              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-5 flex flex-col gap-3"
             >
-              {/* Large decorative quote mark */}
-              <span className="absolute top-4 right-5 text-6xl font-display text-brand-100/60 leading-none select-none pointer-events-none">
-                &ldquo;
-              </span>
-
-              <div className="relative z-10">
-                <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-slate-700 leading-relaxed mb-5 italic">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-100 to-brand-200 flex items-center justify-center">
-                    <span className="text-sm font-bold text-brand-700">{t.author[1]}</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">{t.author}</p>
-                    <p className="text-sm text-slate-500">{t.location} · {t.service}</p>
-                  </div>
-                </div>
+              {/* Name + Google logo */}
+              <div className="flex items-start justify-between gap-2">
+                <span className="font-semibold text-white text-sm leading-snug">{t.author}</span>
+                <span className="text-white font-medium text-sm tracking-wide shrink-0">Google</span>
               </div>
+
+              {/* Stars */}
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+
+              {/* Review text */}
+              <p className="text-white/85 text-sm leading-relaxed">{t.quote}</p>
             </div>
           ))}
         </div>
