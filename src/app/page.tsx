@@ -191,7 +191,7 @@ export default function HomePage() {
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/698379450708e4bafea22e7f.jpg', title: 'Pool & Pergola Package', location: 'Gilbert' },
               { src: 'https://assets.cdn.filesafe.space/RAmAO69TYtGlSS2rVnm9/media/69837dda0708e4fd18a33c2e.jpg', title: 'Luxury Family Pool', location: 'Chandler' },
             ].map((project, i) => {
-              const rotations = [-2, 1.5, -1, 2, -1.5, 1, -2.5, 1, -1, 2, -1.5, 0.5, -2, 1, -0.5, 2, -1, 1.5, -2, 0.5];
+              const rotations = [-4, 3, -2.5, 4.5, -3.5, 2, -5, 3.5, -2, 4, -3, 1.5, -4.5, 2.5, -1.5, 4, -3, 3, -4.5, 1.5];
               return (
                 <div
                   key={i}
