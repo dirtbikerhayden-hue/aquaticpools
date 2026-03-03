@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Menu, X, ChevronDown } from 'lucide-react';
@@ -12,9 +12,25 @@ import { cn } from '@/lib/utils';
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const isTransparent = !scrolled && !mobileOpen;
 
   return (
-    <header className="sticky top-0 z-50 bg-[#faf8f3]/95 backdrop-blur-md border-b border-sand-200">
+    <header
+      className={cn(
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        isTransparent
+          ? 'bg-transparent border-b border-transparent'
+          : 'bg-[#faf8f3]/95 backdrop-blur-md border-b border-sand-200'
+      )}
+    >
       {/* Main nav */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -25,7 +41,7 @@ export function Header() {
               alt="Aquatic Pools and Spas"
               width={200}
               height={48}
-              className="h-16 lg:h-20 w-auto"
+              className="h-8 lg:h-10 w-auto"
               priority
             />
           </Link>
@@ -42,7 +58,10 @@ export function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    'flex items-center gap-1 px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors rounded-lg hover:bg-brand-50/50 whitespace-nowrap',
+                    'flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap',
+                    isTransparent
+                      ? 'text-white/90 hover:text-white hover:bg-white/10'
+                      : 'text-slate-700 hover:text-brand-600 hover:bg-brand-50/50',
                     item.children && 'pr-2'
                   )}
                 >
@@ -53,7 +72,7 @@ export function Header() {
                 {/* Dropdown */}
                 {item.children && openDropdown === item.label && (
                   <div className="absolute top-full left-0 pt-2 z-50">
-                    <div className="w-64 bg-white rounded-xl shadow-elevated border border-slate-100 py-2 animate-fade-in">
+                    <div className="w-64 bg-[#faf8f3] rounded-xl shadow-elevated border border-sand-200 py-2 animate-fade-in">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
@@ -74,7 +93,12 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href={`tel:${siteConfig.phoneRaw}`}
-              className="flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors whitespace-nowrap"
+              className={cn(
+                'flex items-center gap-2 text-sm font-medium transition-colors whitespace-nowrap',
+                isTransparent
+                  ? 'text-white/90 hover:text-white'
+                  : 'text-slate-700 hover:text-brand-600'
+              )}
             >
               <Phone className="w-4 h-4" />
               {siteConfig.phone}
@@ -87,7 +111,10 @@ export function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-slate-700 hover:text-brand-600 transition-colors"
+            className={cn(
+              'lg:hidden p-2 transition-colors',
+              isTransparent ? 'text-white hover:text-white/80' : 'text-slate-700 hover:text-brand-600'
+            )}
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

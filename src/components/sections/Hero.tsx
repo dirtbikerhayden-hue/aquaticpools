@@ -14,7 +14,6 @@ interface HeroProps {
   secondaryCta?: { label: string; href: string };
   backgroundImage?: string;
   backgroundVideo?: string;
-  overlay?: boolean;
 }
 
 export function Hero({
@@ -25,7 +24,6 @@ export function Hero({
   secondaryCta,
   backgroundImage,
   backgroundVideo,
-  overlay = true,
 }: HeroProps) {
   const [muted, setMuted] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -38,7 +36,7 @@ export function Hero({
   }
 
   return (
-    <section className="relative min-h-[75vh] lg:min-h-[85vh] flex items-center overflow-hidden">
+    <section className="-mt-16 lg:-mt-20 min-h-screen relative flex items-center overflow-hidden">
       {/* Background video */}
       {backgroundVideo ? (
         <>
@@ -87,12 +85,9 @@ export function Hero({
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-brand-950 to-slate-900" />
       )}
-      {overlay && (
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/65 to-slate-950/40" />
-      )}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-32">
         <div className="max-w-2xl">
           {subheadline && (
             <div className="animate-fade-in mb-6">
@@ -103,10 +98,10 @@ export function Hero({
               </p>
             </div>
           )}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.05] mb-8 animate-slide-up" style={{ textShadow: '0 2px 40px rgba(0,0,0,0.3)' }}>
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white leading-[1.05] mb-8 animate-slide-up" style={{ textShadow: '0 2px 60px rgba(0,0,0,0.5)' }}>
             {headline}
           </h1>
-          <p className="text-lg sm:text-xl text-slate-300/90 leading-relaxed mb-10 max-w-xl animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <p className="text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-xl animate-slide-up" style={{ animationDelay: '0.1s', textShadow: '0 1px 20px rgba(0,0,0,0.4)' }}>
             {description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
