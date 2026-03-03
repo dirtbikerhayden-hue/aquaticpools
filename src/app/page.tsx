@@ -26,7 +26,7 @@ const serviceCategories = [
     title: 'Luxury Pool Construction',
     description:
       'We build resort-caliber custom pools tailored to Arizona living. From the initial design to the final reveal, every detail is engineered for beauty, durability, and the Arizona climate.',
-    href: '/services/luxury-pool-construction',
+    href: '/services/swimming-pool-construction',
     features: ['Custom Design', 'Water Features', '3D Approval', 'Full Build'],
   },
   {
@@ -34,7 +34,7 @@ const serviceCategories = [
     title: 'Pool Remodeling',
     description:
       'Transform your existing pool into something extraordinary. We handle full pool renovations, replastering, tile updates, equipment upgrades, and feature additions.',
-    href: '/services/pool-remodeling',
+    href: '/services/pool-renovation-remodeling',
     features: ['Replastering', 'Tile & Coping', 'Equipment Upgrades', 'Spa Additions'],
   },
   {
@@ -42,7 +42,7 @@ const serviceCategories = [
     title: 'Backyard Hardscaping',
     description:
       'Complete your outdoor vision with premium hardscaping, outdoor kitchens, fire features, pergolas, and everything that turns a backyard into a private retreat.',
-    href: '/services/backyard-hardscaping',
+    href: '/services/landscape-construction',
     features: ['Outdoor Kitchens', 'Fire Features', 'Pavers & Decking', 'Pergolas'],
   },
 ];
