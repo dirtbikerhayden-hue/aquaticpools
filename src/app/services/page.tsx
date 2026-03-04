@@ -30,7 +30,6 @@ export default function ServicesPage() {
 
       <ServiceCards title="Pool Services" subtitle="Swimming Pools" category="pools" />
       <ServiceCards title="Landscape Services" subtitle="Landscaping" category="landscape" />
-      <ServiceCards title="Concrete Services" subtitle="Concrete" category="concrete" />
 
       <CTASection />
     </>

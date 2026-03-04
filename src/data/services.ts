@@ -12,7 +12,7 @@ export interface ServiceData {
   slug: string;
   title: string;
   shortTitle: string;
-  category: 'pools' | 'landscape' | 'concrete';
+  category: 'pools' | 'landscape';
   metaTitle: string;
   metaDescription: string;
   h1: string;
@@ -331,7 +331,7 @@ export const services: ServiceData[] = [
       { question: "What's the best patio material for Arizona?", answer: "Pavers and natural stone both perform well. Pavers handle heat expansion cycles better than poured concrete, while natural stone offers a premium look." },
       { question: 'How long does patio installation take?', answer: "Most installations take 3 to 10 days depending on size and complexity. We'll provide a timeline during your free estimate." },
     ],
-    relatedSlugs: ['landscape-construction', 'outdoor-kitchens', 'stamped-colored-concrete'],
+    relatedSlugs: ['landscape-construction', 'outdoor-kitchens', 'backyard-hardscaping'],
     primaryKeyword: 'patio installation Arizona',
   },
   {
@@ -370,156 +370,6 @@ export const services: ServiceData[] = [
     ],
     relatedSlugs: ['landscape-construction', 'artificial-turf', 'patios-walkways'],
     primaryKeyword: 'irrigation installation Arizona',
-  },
-  {
-    slug: 'concrete-services',
-    title: 'Concrete Services',
-    shortTitle: 'Concrete',
-    category: 'concrete',
-    metaTitle: 'Concrete Services in Arizona — Driveways, Retaining Walls & More | Aquatic Pools and Spas',
-    metaDescription: 'Professional concrete services in Scottsdale & Paradise Valley, AZ. Driveways, retaining walls, sidewalks, stamped concrete. Free estimates.',
-    h1: 'Professional Concrete Services Built to Last',
-    intro: "From driveways to retaining walls, Aquatic Pools and Spas delivers concrete work that combines structural integrity with a clean, finished appearance. Our experienced crews handle site prep, forming, rebar, pouring, finishing, and curing with the precision that 20+ years of Arizona work demands.",
-    heroImage: '',
-    heroAlt: 'Professional concrete services in Arizona — Aquatic Pools and Spas',
-    features: ['Concrete driveway installation and replacement', 'Retaining wall construction', 'Sidewalk and pathway installation', 'RV pad installation', 'Stamped and colored concrete', 'Proper base prep, rebar, and finishing'],
-    body: [
-      {
-        heading: 'Overview of Our Concrete Capabilities',
-        text: "Aquatic Pools and Spas provides a full range of residential and commercial concrete services across the Scottsdale, Paradise Valley, and greater Maricopa County and Davis County areas. Our experienced crews handle everything from straightforward driveway replacements to complex multi-phase projects involving retaining walls, stamped decorative surfaces, and graded foundations. We pour standard broom-finish concrete, exposed aggregate, stamped and colored decorative concrete, and structural concrete for walls and footings. Our capabilities also include sidewalks, RV pads, curb and gutter, garage floors, and approach aprons. Every project receives the same level of attention to base preparation, reinforcement, forming, finishing, and curing, whether it is a simple walkway or a large commercial pour. With over 20 years of concrete work in Arizona, Aquatic Pools and Spas has built a reputation for quality, reliability, and clean jobsites.",
-      },
-      {
-        heading: 'Proper Base Preparation for Arizona Soil Conditions',
-        text: "The longevity of any concrete installation depends on what is beneath it, and Arizona's soil presents specific challenges that demand expert preparation. Much of the greater Phoenix metro sits on expansive clay soils that swell when wet and shrink when dry, creating movement that can crack and heave improperly supported concrete. Aquatic Pools and Spas addresses this by excavating to adequate depth, removing organic material and unstable soil, and installing a compacted gravel base that provides a stable, well-draining foundation. In areas with particularly poor soil, we may over-excavate and import engineered fill material. We compact the base in lifts using vibratory equipment and verify compaction before forming and pouring. This preparation adds time to the project but is the single most important factor in whether your concrete will perform for five years or fifty years in Arizona conditions.",
-      },
-      {
-        heading: 'Why Quality Concrete Work Matters',
-        text: "Concrete is one of those materials where the difference between good work and poor work may not be visible on day one, but it becomes painfully obvious within a few years. A driveway poured on an inadequate base will crack and settle. A retaining wall without proper drainage will lean and eventually fail. Stamped concrete with inconsistent coloring or poorly placed joints looks worse every season. Aquatic Pools and Spas invests in doing the job right the first time because we know that concrete is permanent and our reputation depends on its long-term performance. We use properly graded mixes specified for the application, install rebar or fiber reinforcement as appropriate, place control joints at correct intervals, and follow proper curing practices. These details separate professional concrete work from the kind of work that leads to costly repairs and replacements.",
-      },
-      {
-        heading: 'Residential and Commercial Concrete Services',
-        text: "While the majority of our concrete work serves homeowners, Aquatic Pools and Spas also handles commercial concrete projects including parking lots, sidewalks, loading areas, retaining walls, and decorative entryways for businesses and HOA common areas. Commercial projects require the same attention to base preparation, reinforcement, and finishing as residential work, but often involve larger pours, thicker sections, heavier reinforcement, and coordination with other trades and municipal inspectors. Our crews are experienced in phased pours that keep businesses operational during construction and ADA-compliant installations for public-facing areas. Whether you are a homeowner planning a new driveway or a property manager upgrading a commercial site, Aquatic Pools and Spas brings the same commitment to quality, clear communication, and on-time completion to every project we take on.",
-      },
-    ],
-    faqs: [
-      { question: 'What concrete services do you offer?', answer: 'We provide driveway installation/replacement, retaining walls, sidewalks, RV pads, patios, stamped concrete, colored concrete, and curb/gutter work.' },
-      { question: 'How long does concrete last in Arizona?', answer: 'Properly installed concrete with adequate base prep and reinforcement lasts 25 to 50+ years in Arizona.' },
-    ],
-    relatedSlugs: ['concrete-driveways', 'retaining-walls', 'stamped-colored-concrete'],
-    primaryKeyword: 'concrete services Arizona',
-  },
-  {
-    slug: 'concrete-driveways',
-    title: 'Concrete Driveways',
-    shortTitle: 'Driveways',
-    category: 'concrete',
-    metaTitle: 'Concrete Driveway Installation in Arizona — Aquatic Pools and Spas',
-    metaDescription: 'Expert concrete driveway installation in Scottsdale & Paradise Valley, AZ. Proper base prep, rebar reinforcement. Free estimates.',
-    h1: "Concrete Driveway Installation That Stands Up to Arizona Winters",
-    intro: "Your driveway takes a beating from Arizona's heat expansion cycles, heavy vehicles, and road salt. Aquatic Pools and Spas installs concrete driveways with proper base preparation, rebar reinforcement, and finishing that stand up to decades of daily use.",
-    heroImage: '',
-    heroAlt: 'Concrete driveway installation in Arizona — Aquatic Pools and Spas',
-    features: ['New installation and old driveway replacement', 'Proper base excavation and compaction', 'Rebar or fiber reinforcement', 'Standard, stamped, or colored finishes', 'Expansion and control joints', 'RV pad extensions and widening'],
-    body: [
-      {
-        heading: 'The Prep and Pour Process for Concrete Driveways',
-        text: "A concrete driveway that lasts decades starts long before the truck arrives. Aquatic Pools and Spas begins every driveway project with a thorough site evaluation to assess existing conditions, soil type, drainage patterns, and access. If replacing an existing driveway, we demolish and haul away the old concrete, then excavate the subgrade to a minimum depth of six inches below the finished surface. We install and compact a four-inch gravel base in lifts, set forms to the correct grade and slope, and place rebar reinforcement on chairs to ensure it sits in the proper position within the slab. Control joints are planned at intervals no greater than ten feet to manage cracking. On pour day, our crew places, screeds, floats, and finishes the concrete in a continuous operation, then applies a curing compound to ensure proper hydration. The result is a clean, durable driveway built to perform in Arizona conditions.",
-      },
-      {
-        heading: 'Thickness and Reinforcement for Arizona Conditions',
-        text: "Standard residential driveways in Arizona should be a minimum of four inches thick on a compacted gravel base. However, Aquatic Pools and Spas frequently recommends increasing to five or six inches for driveways that will support heavy vehicles like RVs, trailers, or work trucks. Thicker concrete resists cracking under heavy loads and provides additional durability against frost heave in Arizona's freeze-thaw climate. We reinforce every driveway with either a grid of number-four rebar on 24-inch centers or fiber-mesh reinforcement, depending on the application. For driveways on expansive clay soils, common throughout Maricopa County and Davis County, rebar reinforcement is strongly preferred because it holds the slab together even if the soil shifts beneath it. We also use air-entrained concrete mixes that contain microscopic air bubbles, allowing the concrete to flex during heat expansion cycles without surface scaling or spalling.",
-      },
-      {
-        heading: 'Driveway Maintenance Tips for Arizona Homeowners',
-        text: "Once your new concrete driveway is installed, a few simple maintenance practices will keep it looking great and performing well for decades. Avoid applying de-icing salt during the first winter, use sand for traction instead. After the first year, use calcium chloride or magnesium chloride products rather than rock salt, which can damage concrete surfaces. Seal your driveway with a quality concrete sealer every two to three years to protect against moisture penetration, staining, and surface wear. Clean oil and grease stains promptly with a degreaser to prevent permanent discoloration. Keep the edges of your driveway supported by maintaining soil and landscaping at the same level as the concrete, as unsupported edges are more likely to crack. If you notice any cracks developing, address them early with a concrete caulk before water infiltration causes the problem to worsen through heat expansion cycles.",
-      },
-      {
-        heading: 'Driveway Replacement vs. Overlay: Which Is Right for You',
-        text: "If your existing driveway is cracked, settled, or deteriorating, you may wonder whether you need a full replacement or can get away with an overlay. The answer depends on the condition of the existing slab. If the concrete is structurally sound with minor surface damage, a two-to-three-inch overlay bonded to the existing surface can restore appearance at a lower cost than full replacement. However, if the slab has significant cracking, settlement, heaving, or base failure, which is common with older driveways on Arizona's clay soils, an overlay will eventually reflect the same problems. In these cases, Aquatic Pools and Spas recommends full removal and replacement with proper base preparation and reinforcement. During your free consultation, our team evaluates the existing driveway honestly and recommends the approach that delivers the best long-term value rather than simply the cheapest short-term fix.",
-      },
-    ],
-    faqs: [
-      { question: 'How thick should a concrete driveway be?', answer: 'At least 4 inches on a compacted gravel base. For heavy vehicles like RVs, we recommend 6 inches with rebar reinforcement.' },
-      { question: 'How much does a concrete driveway cost in Arizona?', answer: 'Typically $8 to $15 per square foot for standard concrete. Stamped or colored options cost more. We provide free estimates.' },
-      { question: 'Do you use rebar in concrete driveways?', answer: "Yes. We use rebar or fiber-mesh reinforcement in every driveway. This significantly reduces cracking, especially important in Arizona's freeze-thaw climate." },
-    ],
-    relatedSlugs: ['concrete-services', 'stamped-colored-concrete', 'retaining-walls'],
-    primaryKeyword: 'concrete driveway installation Arizona',
-  },
-  {
-    slug: 'retaining-walls',
-    title: 'Retaining Walls',
-    shortTitle: 'Retaining Walls',
-    category: 'concrete',
-    metaTitle: 'Retaining Wall Installation in Arizona — Aquatic Pools and Spas',
-    metaDescription: 'Expert retaining wall construction in Scottsdale & Paradise Valley, AZ. Concrete block, natural stone, poured concrete. Free estimates.',
-    h1: 'Retaining Walls That Solve Problems and Look Great',
-    intro: "Retaining walls manage slopes, prevent erosion, and create usable flat spaces on uneven terrain. Aquatic Pools and Spas builds retaining walls that are structurally sound and designed to enhance your property's appearance.",
-    heroImage: '',
-    heroAlt: 'Retaining wall construction in Arizona — Aquatic Pools and Spas',
-    features: ['Structural and decorative retaining walls', 'Concrete block, natural stone, and poured options', 'Proper drainage and backfill engineering', 'Terracing for sloped lots', 'Garden walls and raised planters', 'Permit coordination for walls over 4 feet'],
-    body: [
-      {
-        heading: 'Engineering Considerations for Retaining Walls',
-        text: "Retaining walls are structural elements that must resist enormous lateral pressure from the soil they hold back. A four-foot wall retaining saturated soil can experience thousands of pounds of force per linear foot, and that force increases exponentially with height. Aquatic Pools and Spas approaches every retaining wall project with structural integrity as the top priority. For walls over four feet, we work with licensed structural engineers who design the wall system based on soil type, surcharge loads, slope angle, and drainage conditions specific to your property. Proper engineering accounts for footing depth and width, reinforcement requirements, geogrid placement for segmental block walls, and drainage provisions. Cutting corners on engineering is the primary reason retaining walls fail, and a failed wall is dangerous, expensive to repair, and may create liability issues. Our engineering-first approach ensures your wall performs safely for decades.",
-      },
-      {
-        heading: 'Retaining Wall Material Options',
-        text: "Aquatic Pools and Spas builds retaining walls using several material systems, each with distinct advantages. Segmental concrete block (such as Belgard or Pavestone) is our most popular option for residential walls, offering a clean, consistent appearance, multiple colors and textures, and an interlocking design with geogrid reinforcement for structural walls. Natural stone walls deliver a timeless, organic look that complements mountain and rustic-style homes common in Arizona. Poured concrete walls provide maximum strength and are often used for tall walls, basement foundation walls, and commercial applications where structural demands are highest. Boulder walls use large natural rocks stacked with calculated setback and are ideal for creating a natural, rugged aesthetic on larger properties. We help you select the right material based on the wall's structural requirements, the desired appearance, your budget, and how the wall integrates with your overall landscape design.",
-      },
-      {
-        heading: 'Drainage: The Most Critical Factor in Wall Longevity',
-        text: "More retaining walls fail due to poor drainage than any other cause. When water accumulates behind a retaining wall, it dramatically increases the lateral pressure the wall must resist, a condition called hydrostatic pressure. In Arizona, spring snowmelt and summer thunderstorms can saturate the soil behind a wall rapidly, and if that water has no way to escape, the wall is under extreme stress. Aquatic Pools and Spas installs comprehensive drainage systems behind every retaining wall we build. This includes a perforated drain pipe at the base of the wall wrapped in filter fabric, a zone of clean drainage gravel behind the wall face, and weep holes or outlets that allow collected water to exit. We also grade the area behind the wall to direct surface water away from the wall face. These drainage provisions are invisible once the wall is complete, but they are the single most important factor in ensuring the wall stands strong for 50 years or more.",
-      },
-      {
-        heading: 'Permits and Regulations for Tall Retaining Walls',
-        text: "In most Arizona municipalities, retaining walls over four feet in height require a building permit and a set of engineered construction drawings stamped by a licensed professional engineer. Some cities measure the four-foot threshold from the bottom of the footing to the top of the wall, while others measure only the exposed face height, so it is important to verify local requirements before construction begins. Walls that retain a slope with structures, driveways, or other improvements above them may face additional requirements regardless of height. Aquatic Pools and Spas handles the entire permitting process as part of our service, including coordinating with structural engineers, preparing permit applications, submitting plans to the building department, and scheduling required inspections during construction. This saves you the hassle of navigating municipal processes and ensures your wall is built to code and fully approved.",
-      },
-    ],
-    faqs: [
-      { question: 'How long does a retaining wall last?', answer: 'A properly constructed retaining wall with adequate drainage lasts 50+ years. Good drainage is the key factor.' },
-      { question: 'Do retaining walls need permits in Arizona?', answer: 'Walls over 4 feet typically require a building permit and may need engineering. We handle permitting as part of our service.' },
-    ],
-    relatedSlugs: ['concrete-services', 'landscape-construction', 'concrete-driveways'],
-    primaryKeyword: 'retaining wall installation Arizona',
-  },
-  {
-    slug: 'stamped-colored-concrete',
-    title: 'Stamped & Colored Concrete',
-    shortTitle: 'Stamped Concrete',
-    category: 'concrete',
-    metaTitle: 'Stamped & Colored Concrete in Arizona — Aquatic Pools and Spas',
-    metaDescription: 'Decorative stamped and colored concrete for patios, driveways, and pool decks in Scottsdale & Paradise Valley, AZ. Free estimates.',
-    h1: 'Decorative Stamped & Colored Concrete That Elevates Any Surface',
-    intro: 'Get the look of stone, brick, or tile at a fraction of the cost. Aquatic Pools and Spas installs premium stamped and colored concrete for patios, driveways, pool decks, walkways, and more.',
-    heroImage: '',
-    heroAlt: 'Stamped colored concrete patio in Arizona — Aquatic Pools and Spas',
-    features: ['Wide range of stamp patterns, stone, brick, slate, wood', 'Integral and surface-applied coloring', 'Textured finishes for slip resistance', 'Ideal for patios, driveways, pool decks', 'Sealed for long-lasting beauty', 'More affordable than natural stone'],
-    body: [
-      {
-        heading: 'Pattern and Color Options for Stamped Concrete',
-        text: "Stamped concrete offers an enormous range of design possibilities that can replicate the appearance of almost any natural material. Aquatic Pools and Spas maintains an extensive library of stamp patterns including Ashlar slate, random stone, flagstone, herringbone brick, cobblestone, and even wood plank textures. Each pattern is available with multiple color combinations using integral color, pigment mixed directly into the concrete, combined with a surface-applied release agent that creates realistic depth and variation. Popular color choices among Arizona homeowners include warm sandstone and desert tan tones that complement the natural landscape, rich gray tones that pair with modern architecture, and terra cotta shades that evoke a Mediterranean feel. We can also create custom color blends to match your home's existing stone, brick, or siding. During your consultation, we bring sample boards so you can see and feel actual finished textures and colors before making your selection.",
-      },
-      {
-        heading: 'Durability and Long-Term Performance',
-        text: "Stamped concrete is poured, reinforced, and finished using the same structural standards as any high-quality concrete installation, and it simply receives an additional decorative treatment during the finishing process. This means your stamped patio, driveway, or pool deck has the same 25-to-50-year structural lifespan as standard concrete. The decorative surface is protected by a high-quality acrylic or polyurethane sealer that shields the color from UV fading, prevents moisture penetration, and resists staining from food, oil, and organic matter. Aquatic Pools and Spas uses air-entrained concrete mixes for all exterior stamped work in Arizona, providing essential protection against freeze-thaw surface damage. We also apply textured release agents that leave a slightly rough surface profile, providing slip resistance even when wet, an important safety consideration for pool decks and walkways that receive foot traffic year-round.",
-      },
-      {
-        heading: 'Sealing and Maintaining Stamped Concrete',
-        text: "Sealing is the key to keeping stamped concrete looking vibrant and protected over time. Aquatic Pools and Spas applies an initial sealer coat after the concrete has cured for approximately 28 days. This sealer enhances color depth, adds a subtle sheen, and creates a protective barrier against moisture, stains, and UV exposure. We recommend resealing every two to three years to maintain optimal protection and appearance, a process that takes only a few hours for most patios and driveways. Between sealings, regular maintenance is straightforward: sweep or blow off debris, wash with a garden hose or pressure washer on a low setting, and address any stains promptly with a mild detergent. Avoid using de-icing salts during the first winter and use non-corrosive alternatives in subsequent years. With this simple maintenance routine, your stamped concrete will retain its color, texture, and beauty for many years.",
-      },
-      {
-        heading: 'Stamped Concrete vs. Natural Stone: Making the Right Choice',
-        text: "Homeowners often debate between stamped concrete and natural stone for patios, walkways, and pool decks. Both are excellent choices, but they serve different priorities. Stamped concrete costs significantly less per square foot, typically 30 to 50 percent less than natural stone installation, while still delivering a convincing stone-like appearance. It is poured as a continuous surface, which means fewer joints and a more uniform result over large areas. Natural stone, on the other hand, offers an authenticity and variation that stamped concrete cannot perfectly replicate. Each natural stone piece is unique, and premium materials like travertine and bluestone have a depth of character that is difficult to match. Aquatic Pools and Spas installs both and can help you determine which option best fits your design vision, budget, and maintenance preferences. In many projects, we combine the two, using natural stone for high-visibility areas and stamped concrete for larger expanses where cost efficiency matters.",
-      },
-    ],
-    faqs: [
-      { question: "What's the difference between stamped and regular concrete?", answer: 'Stamped concrete is imprinted with patterns and colored to resemble natural stone, brick, or tile. It costs more than plain concrete but less than natural materials.' },
-      { question: 'Does stamped concrete crack?', answer: "Like all concrete, it can develop minor cracks over time. Proper base prep, reinforcement, and control joints minimize this. Cracks typically follow pattern lines and are barely noticeable." },
-      { question: 'How often does stamped concrete need resealing?', answer: 'Every 2 to 3 years to maintain color and protection. It\'s a simple process that keeps your concrete looking new.' },
-    ],
-    relatedSlugs: ['concrete-services', 'concrete-driveways', 'patios-walkways'],
-    primaryKeyword: 'stamped concrete Arizona',
   },
 ];
 

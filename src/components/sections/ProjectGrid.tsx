@@ -17,7 +17,7 @@ const projects = [
   { id: 10, title: 'Fire Feature & Seating', location: 'Scottsdale, AZ', category: 'Outdoor Kitchen', image: '' },
   { id: 11, title: 'Travertine Pool Surround', location: 'Chandler, AZ', category: 'Hardscaping', image: '' },
   { id: 12, title: 'Decorative Paver Patio', location: 'Paradise Valley, AZ', category: 'Hardscaping', image: '' },
-  { id: 13, title: 'Concrete Pool Deck', location: 'Gilbert, AZ', category: 'Hardscaping', image: '' },
+  { id: 13, title: 'Travertine Pool Deck', location: 'Gilbert, AZ', category: 'Hardscaping', image: '' },
   { id: 14, title: 'Pool Remodel & Retile', location: 'Tempe, AZ', category: 'Pool Remodeling', image: '' },
   { id: 15, title: 'Modern Pool Design', location: 'Scottsdale, AZ', category: 'Pool Construction', image: '' },
   { id: 16, title: 'Custom Inground Pool', location: 'Chandler, AZ', category: 'Pool Construction', image: '' },
