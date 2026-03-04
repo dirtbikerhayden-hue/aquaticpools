@@ -10,6 +10,7 @@ import { TestimonialCards } from '@/components/sections/TestimonialCards';
 import { LuxuryProcessSection } from '@/components/sections/LuxuryProcessSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { FAQAccordion } from '@/components/sections/FAQAccordion';
+import { RenderingsSection } from '@/components/sections/RenderingsSection';
 import { Button } from '@/components/ui/Button';
 import { FadeIn } from '@/components/ui/FadeIn';
 
@@ -230,6 +231,9 @@ export default function HomePage() {
 
       {/* Luxury Process */}
       <LuxuryProcessSection />
+
+      {/* Renderings */}
+      <RenderingsSection />
 
       {/* FAQ */}
       <FAQAccordion
